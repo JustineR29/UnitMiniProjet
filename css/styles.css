@@ -12,6 +12,10 @@
 html,body{
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
     /*background-color: black;*/
 	color:var(--color-text);
     padding: 0;
@@ -109,10 +113,9 @@ html,body{
     transform-style: preserve-3d;
     transform: rotateY(180deg);
 }
-/*
-.card:hover .flip{
-    transform: rotateY(0deg);
-}*/
+.card:hover{
+    box-shadow: -2px -2px 4px grey;
+}
 .card.visible>.flip{
     transform: rotateY(0deg);
 }
